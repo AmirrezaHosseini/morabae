@@ -2,6 +2,8 @@
 
 
 import { useState } from "react";
+import Image from "next/image";
+
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
@@ -23,11 +25,7 @@ export default function Header() {
               className="flex items-center space-x-2 space-x-reverse"
               aria-label="صفحه اصلی"
             >
-              <img
-                src="/images/logo.png" // or your actual image path like "/logo.png"
-                alt="favicon"
-                className="w-6 h-6 ml-2"
-              />
+              <Image src="/images/logo.png" alt="Logo" width={24} height={24} className="ml-2" />
               <span className="text-xl font-bold text-[#2cc49b]">مربع</span>
             </button>
           </div>

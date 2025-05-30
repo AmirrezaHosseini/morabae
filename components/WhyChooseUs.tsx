@@ -1,5 +1,5 @@
 import { FaRegCheckCircle, FaWallet, FaRedo, FaCity } from "react-icons/fa";
-import { FaAccusoft } from "react-icons/fa6";
+
 
 export default function WhyChooseUs() {
   const reasons = [
